@@ -1,0 +1,235 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F5FC;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+  }
+
+.logo{
+    align-self: flex-start;
+    margin: 10px 0 0 0;
+    width: 110px;
+    height: auto;
+}
+
+textarea{
+    margin-top: 60px;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    background-color: #f4f4fc;
+    cursor: pointer;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'inter', sans-serif;
+    color: #0a3871;
+    &:focus{ 
+        outline: none;
+    }
+}
+
+&:placeholder{
+    color: #063871;
+}
+
+.cajatexto:focus,
+.cajatexto:active {
+    border: none;
+    outline: none;
+}
+
+.alerta{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1.2rem;
+    color: #495057;
+    font-size: 15px;
+}
+
+.contenedorbotones{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn-encriptar{
+    width: 240px;
+    height: 48px;
+    background-color: #063871;
+    border-radius: 15px;
+    border: solid 2px #0a3871;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    &:active{
+        background-color: #063871;
+        border: solid 2px #063871;
+    }
+}
+
+.btn-desencriptar{
+    width: 240px;
+    height: 48px;
+    border-radius: 15px;
+    background-color: #CED4DA;
+    border: solid 2px #0A3871;
+    color: #0A3871;
+    font-size: 16px;
+    cursor: pointer;
+    &:active {
+      background-color: #343A40;
+      border: solid 2px #343A40;
+      color: white;
+    }
+}
+
+.seccion2{
+    background-color: white;
+    border-radius: 32px;
+    width: 300px;
+    height: 450px;
+    margin: 30px 40px 30px 0px;
+    padding: 0px 40px 0px 40px;
+    box-shadow: 0px 0px 8px 0px #CED4DA;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedormunieco{
+    width: 200px;
+    height: auto;
+}
+
+ h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #343A40;
+    margin: 25px;
+}
+
+ h3{
+    font-size: 13px;
+    color: #495057;
+    margin-bottom: 25px;
+}
+
+.btn-copiar{
+    width: 240px;
+    height: 48px;
+    border-radius: 15px;
+    background-color: white;
+    border: solid 2px #0A3871;
+    color: #0A3871;
+    font-size: 16px;
+    cursor: pointer;
+    &:active {
+     background-color: #868E96;
+    border: solid 2px #868E96;
+     color: white;
+    }
+}       
+
+.ocultar{
+    display: none;
+}
+
+.contenedor2{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    background-color: #f4f4fc;
+    width: 100%;
+    height: 100%;
+}
+
+.nombres p{
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400; 
+    font-family:'Inter', sans-serif;
+}
+
+.links{
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 100px;
+}
+
+/*Responcive design*/
+
+@media screen and (max-width: 1100px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion2{
+        width: 500px;
+        height: 400px;
+        margin: 50px auto;
+    }
+    .contenedormunieco{
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        align-self: inherit;
+    }
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorcajatexto{
+        width: 350px;
+    }
+    .alerta{
+        justify-content: center;
+        font-size: 15px;
+    }
+    .alerta img{
+        width: 15px;
+    }
+    .contenedorbotones{
+        margin-top: 30px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        width: 350px;
+        height: 60px;
+        font-size: 1.6rem;
+    }
+    .contenedorparrafo, .contenedorcopiar, .contenedorresultado{
+       width: 300px;
+       height: 400px;
+       margin: 50px auto;
+       padding: 0 15px 0 15px; 
+    }
+    .contenedormunieco{
+        display: none;
+    }
+}
+

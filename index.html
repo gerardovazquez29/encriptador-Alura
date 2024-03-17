@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Encriptador challenger</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="logo">
+                <img class="logo" src="img/Logo.svg" alt="logo">
+        </section>
+
+        <section class="seccion1">
+            <div class="contenedorcajatexto">
+                <textarea placeholder="Ingrese el textoaqui"cols="30" rows="9" class="cajatexto"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="img/alerta.svg" alt="alerta">
+                <h4>Solo letras minusculas y sin acentos</h4>
+            </div>
+            <div class="contenedorbotones">
+                <input type="button" onclick="btnEncriptar" class="btn-encriptar" value="Encriptar">
+                <input type="button" onclick="btnDesencriptar" class="btn-desencriptar" value="Desencriptar">
+            </div>
+        </section>
+
+        <section class="seccion2">
+            <div class="contenedormunieco">
+                <img src="img/Muñeco.svg" alt="munieco">
+            </div>
+            <div class="contenedorparrafo">
+                <h2>Ningun mensaje fue encontrado</h2>
+                <h3>Ingrese el texto que desee encriptar o desencriptar.</h3>
+            </div>
+            <div class="contenedorcopiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+            <div class="contenedorresultado">
+                <p class="textoresultado"></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="contenedor2">
+            <div class="nombre">
+                <p class="nombres">Gerardo Vazquez</p>
+            </div> 
+        </div>   
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="app.js"></script> -->
+</body>
+</html>
